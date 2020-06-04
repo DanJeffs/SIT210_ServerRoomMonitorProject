@@ -33,17 +33,23 @@ Once the code is up and running on your Argon, you should start to see temp read
 Raspberry Pi Setup
 
 The Raspberry Pi component of this project uses an open source project called Magic Mirror for displaying the dashboard. 
-The first step is to get Raspbian setup and installed on the Pi and then follow through the documentation from the magic mirror site https://magicmirror.builders/ to get it installed and up and running. Below I will provide the code for the config and the modules used to enable the monitoring component to use. Addon modules can be obtained from the following list -
+The first step is to get Raspbian setup and installed on the Pi and then follow through the documentation from the magic mirror site https://magicmirror.builders/ to get it installed and up and running. 
+
+Below I will provide the code for the config and the modules used to enable the monitoring component to use. Addon modules can be obtained from the following list -
 https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules
+
 MMM-ParticleStatus is the main module required to display the items on your dashboard from the Particle. See the link below for the module which includes instructions for setup and installation your Magic Mirror. Instruction include how to call the status of a function from the Particle to get the reading into your Magic Mirror
 https://github.com/NickEngmann/MMM-ParticleStatus
+
 Optional Steps -
 I Have used a HTML snippet generated from a ThingSpeak channel https://thingspeak.com/
 For this you will need an account and setup the monitoring of the function from within ThingSpeak. 
 You will then need MMM-HTML-Snippet installed on the Magic Mirror and can copy and paste the snippet from ThingSpeak into your config. 
 https://github.com/ulrichwisser/MMM-HTMLSnippet 
+
 I also have several other components running on my Magic Mirror including a Motion Sensor to turn the screen off when someone is not around. It is enabled by the following addon module – 
 https://github.com/paviro/MMM-PIR-Sensor
+
 There is plenty of documentation about this setup in various places and especially in the Magi Mirror community forum. 
 My config for my Magic Mirror is in the GITHUB repository – 
 https://github.com/DanJeffs/SIT210_ServerRoomMonitorProject/blob/master/config.js
