@@ -17,12 +17,18 @@ The Particle argon is wired as per the picture above.
 -	Pin D3 on the Argon is connected directly to the middle pin (signal) on the PIR sensor.
 -	Pin D6 on the Argon is connected directly to the Digital out PIN (right) on the DHT11 mini board.
 -	V and G are applied to the 2 sensors from the distribution rail on the bread board.
+
 *Your PIN config on your sensors may be different, so you need to read the documentation on your specific sensor.  
+
+
 The only other requirement is the connection to the Wi-fi module and a USB power source.
 The setup of the Argon assumes you have paired the argon with your account and are familiar with flashing the firmware of your device and connecting it to the Wifi network.
 Code for the Argon can be found here – 
 https://github.com/DanJeffs/SIT210_ServerRoomMonitorProject
+
 Once the code is up and running on your Argon, you should start to see temp readings coming through in the Particle Console. You will also notice Motion_Sensor function sending MOTION whenever it detects motion from the PIR. It will only send this once every 60 seconds and will not send again until it has passed a NO_MOTION test.
+
+
 
 Raspberry Pi Setup
 
